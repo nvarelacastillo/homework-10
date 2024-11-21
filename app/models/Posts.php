@@ -13,7 +13,7 @@ class Posts extends Model {
 
     public function getPostById($id) {
         $query = "select * from posts where id = :id";
-        return $this->fetch($query, [':id' => $id]);
+        return $this->fetch($query, ['id' => $id]);
     }
 
     public function addPost($data) {
